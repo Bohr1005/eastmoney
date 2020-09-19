@@ -7,6 +7,9 @@ import scrapy
 
 
 class EastmoneyItem(scrapy.Item):
+    fund_code = scrapy.Field()
+    fund_name = scrapy.Field()
+    date = scrapy.Field()
     code = scrapy.Field()
     name = scrapy.Field()
     weight = scrapy.Field()
